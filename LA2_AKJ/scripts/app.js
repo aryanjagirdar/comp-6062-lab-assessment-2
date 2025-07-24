@@ -3,7 +3,7 @@ const app = Vue.createApp({
     // Define the data for the app
     data() {
         return {
-            studentName: 'Aryan Jagirdar',
+            studentName: "Aryan Jagirdar",
             gasLevelValue: 55,
 
         gasLevels: [
@@ -23,7 +23,7 @@ const app = Vue.createApp({
     // Define the methods for the app
     methods: {
         activeGasLevel(gasLevel) {
-           return
+           return this.gasLevelValue>=gasLevel.min && this.gasLevelValue<=gasLevel.max
         }
     }
 });
